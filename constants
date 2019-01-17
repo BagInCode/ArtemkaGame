@@ -1,6 +1,131 @@
 #ifndef CONSTANTS_DB
 #define CONSTANTS_DB
 
+/// ---------- Sprites constants --------
+
+const int POSITION_ALICE_PHOTO_LEFT = 0;
+const int POSITION_ALICE_PHOTO_TOP = 0;
+const int ALICE_PHOTO_LENGTH = 45;
+const int ALICE_PHOTO_HIGH = 100;
+const int COUNT_ALICE_PHOTO = 9;
+
+const int POSITION_CLOUD_PHOTO_LEFT = 201;
+const int POSITION_CLOUD_PHOTO_TOP = 200;
+const int CLOUD_PHOTO_LENGTH = 190;
+const int CLOUD_PHOTO_HIGH = 100;
+
+const int POSITION_GROUND_PHOTO_LEFT = 200;
+const int POSITION_GROUND_PHOTO_TOP = 300;
+const int GROUND_PHOTO_LENGTH = 100;
+const int GROUND_PHOTO_HIGH = 100;
+
+const int POSITION_BACKGROUND_PHOTO_LEFT = 0;
+const int POSITION_BACKGROUND_PHOTO_TOP = 200;
+const int BACKGROUND_PHOTO_LENGTH = 200;
+const int BACKGROUND_PHOTO_HIGH = 300;
+
+const int POSITION_SUN_PHOTO_LEFT = 300;
+const int POSITION_SUN_PHOTO_TOP = 300;
+const int SUN_PHOTO_LENGTH = 100;
+const int SUN_PHOTO_HIGH = 100;
+
+const double POSITION_SUN_X = 1200;
+const double POSITION_SUN_Y = 0;
+
+const int POSITION_ARCH_PHOTO_LEFT = 400;
+const int POSITION_ARCH_PHOTO_TOP = 200;
+const int ARCH_PHOTO_LENGTH = 200;
+const int ARCH_PHOTO_HIGH = 300;
+
+const double POSITION_ARCH_X = 700;
+const double POSITION_ARCH_Y = 300;
+
+const int POSITION_NAMEPLATE_PHOTO_LEFT = 300;
+const int POSITION_NAMEPLATE_PHOTO_TOP = 400;
+const int NAMEPLATE_PHOTO_LENGTH = 100;
+const int NAMEPLATE_PHOTO_HIGH = 100;
+
+const double POSITION_NAMEPLATE_X = 600;
+const double POSITION_NAMEPLATE_Y = 500;
+
+const int POSITION_DRAGON_PHOTO_LEFT = 0;
+const int POSITION_DRAGON_PHOTO_TOP = 600;
+const int DRAGON_PHOTO_LENGTH = 180;
+const int DRAGON_PHOTO_HIGH = 170;
+
+const int POSITION_SQUIRREL_PHOTO_LEFT = 0;
+const int POSITION_SQUIRREL_PHOTO_TOP = 500;
+const int SQUIRREL_PHOTO_LENGTH = 100;
+const int SQUIRREL_PHOTO_HIGH = 100;
+
+const int POSITION_SWORD_PHOTO_LEFT = 300;
+const int POSITION_SWORD_PHOTO_TOP = 500;
+const int SWORD_PHOTO_LENGTH = 50;
+const int SWORD_PHOTO_HIGH = 100;
+
+const double SWORD_POSITION_X = 550;
+const double SWORD_POSITION_Y = 510;
+
+const int POSITION_STONE_PHOTO_LEFT = 350;
+const int POSITION_STONE_PHOTO_TOP = 500;
+const int STONE_PHOTO_LENGTH = 50;
+const int STONE_PHOTO_HIGH = 100;
+
+const double STONE_POSITION_X = 550;
+const double STONE_POSITION_Y = 510;
+
+const int COUNT_SQUIRREL_PHOTO = 3;
+
+const int POSITION_ALICE_HEAD_PHOTO_LEFT = 500;
+const int POSITION_ALICE_HEAD_PHOTO_TOP = 0;
+
+const int POSITION_SQUIRREL_HEAD_PHOTO_LEFT = 540;
+const int POSITION_SQUIRREL_HEAD_PHOTO_TOP = 0;
+
+const int POSITION_DRAGON_HEAD_PHOTO_LEFT = 580;
+const int POSITION_DRAGON_HEAD_PHOTO_TOP = 0;
+
+const int HEAD_PHOTO_LENGTH = 40;
+const int HEAD_PHOTO_HIGH = 40;
+
+const int COUNT_GROUND_SPRITES_ON_SCREEN = 13;
+const double POSITION_GROUND_SPRITE_X = 100;
+const double POSITION_GROUND_SPRITE_Y = 600;
+
+const int COUNT_BACKGROUND_SPRITES_ON_SCREEN = 7;
+
+const double POSITION_BACKGROUND_SPRITE_X = 200;
+const double POSITION_BACKGROUND_SPRITE_Y = 300;
+
+const int COUNT_CLOUD_SPRITES_ON_SCREEN = 8;
+
+const double POSITION_CLOUD_SPRITE_X = 200;
+const double POSITION_DOWNER_CLOUD_SPRITE_Y = 100;
+const double POSITION_UPPER_CLOUD_SPRITE_Y = 0;
+const double CLOUD_DISPLACEMENT_BY_X = 100;
+
+const int POSITION_DRAGON_FIRE_PHOTO_LEFT = 0;
+const int POSITION_DRAGON_FIRE_PHOTO_TOP = 770;
+const int DRAGON_FIRE_PHOTO_LENGTH = 100;
+const int DRAGON_FIRE_PHOTO_HIGH = 100;
+
+/// ---------- End Sprites constants ----
+
+/// ---------- Text constants --------
+
+const int STANDART_TEXT_SIZE = 10;
+const int PAUSA_TEXT_SIZE = 300;
+
+const double NAMEPLATE_TEXT_X = 605;
+const double NAMEPLATE_TEXT_Y = 505;
+
+const double PAUSA_TEXT_X = 240;
+const double PAUSA_TEXT_Y = 100;
+
+const double CUT_SCENE_1_1_FINAL_SCREEN_TEXT_POSITION_X = 5;
+const double CUT_SCENE_1_1_FINAL_SCREEN_TEXT_POSITION_Y = 5;
+
+/// ---------- End Text constants ----
 /// ---------- Level 1.2 -------------
 
 const double ALICE_BOOST = 7.5;
@@ -9,15 +134,15 @@ const double ALICE_BOOST_SPEED = 70;
 const double MIN_ALICE_LEFT_POSITION = 0;
 const double MAX_ALICE_RIGHT_POSITION = 1255;
 const double MAX_ALICE_UP_POSITION = 0;
-const double MIN_ALICE_DOWN_POSITION = 500;
+const double MIN_ALICE_DOWN_POSITION = 515;
 
 const double DRAGON_BOOST = 5;
 const double DRAGON_BOOST_SPEED = 200;
 const double DRAGON_HORIZONTAL_SPEED = 8;
 const double MIN_DRAGON_LEFT_POSITION = 1;
-const double MAX_DRAGON_RIGHT_POSITION = 999;
+const double MAX_DRAGON_RIGHT_POSITION = 1119;
 const double MAX_DRAGON_UP_POSITION = 0;
-const double MIN_DRAGON_DOWN_POSITION = 400;
+const double MIN_DRAGON_DOWN_POSITION = 465;
 const double MAX_DRAGON_STAY = 3000;
 
 const double MAX_CLOUDS_DISPLACEMENT = 200;
@@ -30,18 +155,31 @@ const double MILLI_SECOND_FOR_KICK_PHOTO = 150;
 const double MILLI_SECOND_FOR_ACTION = 9.9;
 const double MIN_VALUE_BOOST = -10;
 
+const double FIRST_FIRE_TIMER = 1500;
+const double SECOND_FIRE_TIMER = 1650;
+const double THIRD_FIRE_TIMER = 1800;
+const double FOURTH_FIRE_TIMER = 2600;
+const double FIFTH_FIRE_TIMER = 2850;
+
+const double ONE_FIRE_DISPLACEMENT = 100;
+const double TWO_FIRE_DISPLACEMENT = 200;
+const double THREE_FIRE_DISPLACEMENT = 300;
+const double TURN_DRAGON_DISPLACEMENT = 50;
+
+const double ALICE_DISPLACEMENT_ABOUT_DRAGON_FIRE_BY_VERTICAL = 100;
+
+const double KICK_PHOTO_DISPLACEMENT = 100;
+
+const double DISPLACENET_DRAGON_FIRE_ABOUT_DRAGON_BY_Y = 35;
+
 const int WINDOW_HEIGH = 700;
 const int WINDOW_LENGTH = 1300;
 
-const int ALICE_PHOTO_LENGTH = 45;
-const int ALICE_PHOTO_HIGH = 100;
-const int COUNT_ALICE_PHOTO = 9;
-
 const int DRAGON_RANDOM_MODUL = 1000;
 const int DRAGON_RANDOM_DISPLACEMENT = 500;
-const int DRAGON_PHOTO_LENGTH = 300;
-const int DRAGON_PHOTO_HIGH = 200; 
 const int DRAGON_HEALTH_POINTS = 10;
+
+const int CHANGE_FIRE_PHOTO_SPEED = 150;
 
 const int FIRST_STRANGE_CONST = 25;
 const int SECOND_STRANGE_CONST = 150;
@@ -51,20 +189,58 @@ const int SECOND_STRANGE_CONST = 150;
 
 const int COUNT_PROBLEMS = 13;
 const int TRUE_FINISH = 32;
+const int COUNT_ARCHS = 3;
 
-double CoordinateZeroArchBegin = 700;
-double CoordinateZeroArchEnd = 855;
-double CoordinateOneArchBegin = 900;
-double CoordinateOneArchEnd = 1055;
-double CoordinateTwoArchBegin = 1100;
+const double COORDINATE_ZERO_ARCH_BEGIN = 700;
+const double COORDINATE_ZERO_ARCH_END = 855;
+const double COORDINATE_ONE_ARCH_BEGIN = 900;
+const double COORDINATE_ONE_ARCH_END = 1055;
+const double COORDINATE_TWO_ARCH_BEGIN = 1100;
+
+const double TIME_LOOSE_WAITING = 5;
 
 /// ------------ End Level 1.1 --------
 /// ------------ Cut Scene 1.1 --------
 
-const int COUNT_SQUIRREL_PHOTO = 3;
-const int SQUIRREL_PHOTO_LENGTH = 60;
-const int SQUIRREL_PHOTO_HEIGH = 100;
+const double ALICE_START_POSITION_IN_CUT_SCENES = -500;
+const double ALICE_FINISH_POSITION_IN_CUT_SCENE = 500;
+
+const double SQUIRREL_START_POSITION_IN_CUT_SCENES = 1700;
+const double SQUIRREL_FINISH_POSITION_IN_CUT_SCENES = 700;
+
+const double DIALOG_FIELD_POSITION_X = 350;
+const double DIALOG_FIELD_POSITION_Y = 50;
+
+const double WAITING_AFTER_END_OF_MOOVING = 1000;
+
+const double POSITION_PRESS_LMB_TO_CONTINUE_X = 530;
+const double POSITION_PRESS_LMB_TO_CONTINUE_Y = 600;
+
+const double POSITION_SQUIRREL_HEAD_SPRITE = 905;
+const double POSITION_REPLIC_FIELD_RIGHT = 900;
+
+const double POSITION_ALICE_HEAD_SPRITE = 355;
+const double POSITION_REPLIC_FIELD_LEFT = 405;
+
+const int COUNT_MOUSE_CLICK_CUT_SCENE_1_1 = 8;
+
+const int DIALOG_FIELD_COLOR_R = 145;
+const int DIALOG_FIELD_COLOR_G = 20;
+const int DIALOG_FIELD_COLOR_B = 145;
+
+const int DIALOG_FIELD_OUTLINE_THICKNESS = 2;
 
 /// ------------ End Cut Scene 1.1 ----
+/// ------------ Cut Scene 1.2.1 ------
+
+const int COUNT_MOUSE_CLICK_CUT_SCENE_1_2_1 = 3;
+
+/// ------------ End Cut Scene 1.2.1 --
+/// ------------ Cut Scene 1.2.2 ------
+
+const int COUNT_MOUSE_CLICK_CUT_SCENE_1_2_2 = 7;
+const double POSITION_DRAGON_IN_CUT_SCENE_1_2_2 = 600;
+
+/// ------------ End Cut Scene 1.2.2 --
 
 #endif
